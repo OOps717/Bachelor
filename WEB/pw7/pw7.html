@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="pw7.css" type="text/css">
+	<title>Form</title>
+</head>
+<body>
+
+<h1>Let's make a test!</h1>
+
+<div id="div1">
+<fieldset>
+ <legend>Hello there!:</legend>
+ <form action="pw7.php">
+  *First name:
+  <input type="text" name="firstname" value="Emin" required><br>
+  *Last name:
+  <input type="text" name="lastname" value="Sultanov" required><br>
+  *Login:
+  <input type="text" name="login" value="eminsultanov1999" required><br>
+</fieldset>
+
+
+<br>
+<p>Your gender: </p>
+  <input type="radio" name="gender" value="male" checked> Male<br>
+  <input type="radio" name="gender" value="female"> Female<br>
+  <input type="radio" name="gender" value="other"> Other <br> 
+
+<p>Select your profession:</p>
+ <select name="Personage">
+  <option value="a">None</option> 
+  <option value="s">Student</option>
+  <option value="t">Teacher</option>
+  <option value="e">Engeneer</option>
+  <option value="p">Painter</option>
+  <option value="g">Garbage collector</option>
+</select> 
+
+<p>Select your preferable speciality:</p>
+ <select name="Personage">
+  <option value="none">None</option> 
+  <option value="a">Computer Science</option> 
+  <option value="s">Chemical Engeneering</option>
+  <option value="t">Geophysical Engeneering</option>
+  <option value="oil">Oil-gas Engeneering</option>
+</select> 
+
+<br>
+
+<p>*Date:</p>
+  <input type="text" name="date" value="dd/mm/yyyy" required><br>
+
+<p>Select languages on which you can speak:</p>
+  <input type="checkbox" name="en" value="English"> English<br>
+  <input type="checkbox" name="az" value="Azerbaijan">Azerbaijan<br>
+  <input type="checkbox" name="ru" value="Russian">Russian<br>
+  <input type="checkbox" name="de" value="German">German<br>
+  <input type="checkbox" name="jp" value="Japanese">Japanese<br>
+  <input type="checkbox" name="ch" value="Chinese">Chinese<br>
+  <input type="checkbox" name="fr" value="French">French<br>
+
+<br>
+  <textarea name="message" rows="10 cols="100">Type something here for comment</textarea><br>
+<br>
+
+<button type="button" onclick="alert('Checked!')">Check for submission</button>
+<input type="submit" value="Send">
+</form>
+</div>
+</body>
+</html>

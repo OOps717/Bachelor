@@ -1,0 +1,193 @@
+.flex-container {
+  display: flex;
+  width: : auto;
+  height: 600px;
+  background-image: url("http://www.colourhide.com/includes/images/wallpapers/coloured_dots/Colour%20Dot%20Wallpapers-02.jpg");
+  background-size: cover;	
+  margin:0px;
+}
+
+.flex {
+  display: flex;
+  width: : 40%;
+  flex-direction: column;
+  height: auto;
+  margin:0px;
+}
+
+.flexy {
+  display: flex;
+  width: : 40%;
+  flex-direction: row;
+  height: auto;
+  margin:0px;
+}
+
+
+#h1{
+	align-self: flex-start;
+	padding: 25px;
+	color:rgb(104, 137, 246);
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+	background-image: url("https://img.clipartxtras.com/1888582f7dcb3309a3f807f49881e379_music-instruments-digital-art-artwork-drawings-music-art-music-drawing-wallpaper_1920-1080.jpeg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 30px;
+	left : 20px;
+	font-weight: bold;
+	font-family: Helvetica, Arial, sans-serif;
+	margin:0px;
+}
+
+.navbar{
+	display: flex;
+    background-color: #333;
+
+}
+
+.navbar #a1 {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.navbar #a1:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.aside {
+
+	border-radius: 15px;
+	border: 0.5px solid gray;
+	align-self: middle;
+    flex: 30%;
+    background-color: rgb(114, 89, 106);
+    padding: 20px;
+    width: auto;
+	height: auto;
+	margin:10px;
+}
+
+h2{
+	font-family: Helvetica, Arial, sans-serif;
+	background-color: rgb(148, 181, 246);
+	color:rgb(218, 230, 246);
+	border-radius: 15px;
+	padding: 6px;
+	margin:1px;
+}
+
+#main {
+	width: auto;
+	border-radius: 15px;
+	border: 0.5px solid gray;
+	align-self: middle;
+    flex: 70%;
+    background-color: rgb(100, 101, 165);
+    padding: 20px;
+    margin:5px;
+}
+
+
+#div1{
+	border-radius: 15px;
+	width: auto;
+	margin: 5px;
+	height: 110px;
+    border: 0.1px solid gray;
+    background-color: rgb(180, 167, 204);
+}
+
+#div2{
+	border-radius: 15px;
+	width: auto;
+	margin: 5px;
+	height: 130px;
+    border: 0.1px solid gray;
+    background-color: rgb(180, 167, 204);
+
+    margin-bottom: 40px; 
+}
+
+#div3{
+	margin-bottom: auto;
+	border-radius: 15px;
+	width: auto;
+	margin: 5px;
+	height: 187px;
+    border: 0.1px solid gray;
+    background-color: rgb(180, 167, 204);	
+}
+
+#div4{
+	background-color: rgb(196, 159, 195);
+	border-radius: 15px;
+	padding: 10px;
+	width: auto;
+	margin: 5px;
+	height: 220px;
+    border: 0.1px solid gray;
+    background-color: rgb(180, 167, 204);	
+}
+
+#p2{
+	color: rgb(45, 45, 48);
+	height: 20px;
+	padding: 3px;
+	margin: 2px;
+}
+#p1{
+	color: rgb(45, 45, 48);
+	height: 20px;
+	padding: 3px;
+	font-size: 20px;
+	margin: 2px;
+	font-family: "Times New Roman", Times, serif;
+}
+#p3{
+	background-color: #333;
+	color:#333;
+	margin:0px;
+}
+
+#p4{
+	background-color: rgb(213, 226, 198);
+	color:rgb(54, 55, 53);
+	padding: 3px;
+	text-align: center;
+	border-radius: 15px;
+	margin-left: 30%;
+	margin-right: 30%;
+}
+
+.footer {
+	
+    width: 100%;
+    background-image: url("https://wallpaperstock.net/pop-art-concept-wallpapers_41118_1920x1080.jpg");
+    color: white;
+    width: auto;
+    text-align: center;
+   	padding: 5px;
+   	margin:0px;
+   	margin-bottom: auto;
+}
+
+#a2{
+	color: rgb(45, 45, 48);
+    padding: 5px ,5px;
+    text-decoration: none;
+    text-align: center;
+}
+
+#a2:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+@media screen and (max-width: 700px) {
+    .flex-container, .navbar,.flex ,.flexy, .footer{   
+        flex-direction: column;
+    }
+}

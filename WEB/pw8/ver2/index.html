@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>jQuery UI Accordion - Default functionality</title>
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( "#menu" ).menu();
+    $( "#accordion" ).accordion();  
+    $( document ).tooltip();
+    $( ".widget input[type=submit], .widget a, .widget button" ).button();
+    $( "button, input, a" ).click( function( event ) {
+      event.preventDefault();
+    } );
+  } );  
+  </script>
+    <style>
+  .ui-menu { width: 150px; }
+  </style>
+</head>
+<body>
+ 
+<div id="accordion">
+  <h3>Section 1</h3>
+  <div>
+    <p>
+    <a href="#" title="HyperText Markup Language">HTML</a>
+    is a markup language for creating a webpage. Webpages are usually viewed in a web browser. They can include writing, links, pictures, and even sound and video. HTML is used to mark and describe each of these kinds of content so the web browser can display them correctly.
+    </p>
+  </div>
+  <h3>Section 2</h3>
+  <div>
+    <p>
+    <a href="#" title="Cascading Style Sheets">CSS</a>
+    is a style sheet language used for describing the presentation of a document written in a markup language like HTML. CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript.
+    </p>
+  </div>
+  <h3>Section 3</h3>
+  <div>
+    <p>
+    <a href="#" title="JavaScript">JS</a>, is a high-level, interpreted programming language. It is a language which is also characterized as dynamic, weakly typed, prototype-based and multi-paradigm. 
+    </p>
+  </div>
+  <h3>Section 4</h3>
+  <div>
+    <p>
+    jQuery is a JavaScript library designed to simplify the client-side scripting of HTML. It is free, open-source software using the permissive MIT License.Web analysis indicates that it is the most widely deployed JavaScript library by a large margin.
+    </p>
+  </div>
+</div>
+ 
+<p>CS:</p>
+<ul id="menu">
+    <li><div>Fakhri</div></li>
+    <li><div>Amin</div></li>
+    <li><div>Sanan</div></li>
+    <li><div>Kamal</div>
+      <ul>
+        <li class="ui-state-disabled"><div>Eyubov</div></li>
+        <li><div>Agayev</div></li>
+      </ul>
+    </li>
+    </ul>
+
+
+<div class="widget">
+  <h1>Submission</h1>
+  <button>Just a button</button>
+ 
+  <input type="submit" value="Submit">
+ 
+  <a href="#">Corgi</a>
+</div>
+
+</body>
+</html>
