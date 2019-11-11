@@ -1,0 +1,187 @@
+        -:    0:Source:detect.c
+        -:    0:Graph:detect.gcno
+        -:    0:Data:detect.gcda
+        -:    0:Runs:18
+        -:    0:Programs:1
+        -:    1:#include <unistd.h>
+        -:    2:#include <stdlib.h>
+        -:    3:#include <stdio.h>
+        -:    4:#include <string.h>
+        -:    5:#include <time.h>
+        -:    6:#include <sys/wait.h>
+        -:    7:
+        5:    8:void error (int er_num)
+        -:    9:{   
+        5:   10:    if (er_num == 1)
+        -:   11:    {
+        1:   12:        fprintf (stderr,"Input should be: detect [-t format] [-i interval] [-l limit] [-c] prog arg ... arg\n");
+        1:   13:        exit (1);
+        -:   14:    }
+        4:   15:    else if (er_num == 2)
+        -:   16:	{
+    #####:   17:        fprintf (stderr,"Time format is too big\n");
+    #####:   18:        exit (2);
+        -:   19:    }
+        4:   20:	else if (er_num == 3) 
+        -:   21:	{
+        2:   22:		fprintf (stderr,"Not appropriate time interval. Can not be negative or NULL interval\n");
+        2:   23:		exit (3);
+        -:   24:	}
+        2:   25:	else if (er_num == 4)
+        -:   26:	{
+        1:   27:		fprintf (stderr,"Not appropriate time limit. Can not be negative limit\n");
+        1:   28:		exit (4);
+        -:   29:	}
+        1:   30:	else if (er_num == 5)
+        -:   31:	{
+        1:   32:		fprintf (stderr, "Expected argument after options\n");
+        1:   33:        exit (5);
+        -:   34:	}
+    #####:   35:	else if (er_num == 6)
+        -:   36:	{
+    #####:   37:		fprintf (stderr,"Pipe is not created\n");
+    #####:   38:		exit(6);
+        -:   39:	}
+    #####:   40:	else if (er_num == 7)
+        -:   41:	{
+    #####:   42:		fprintf (stderr,"Error in fork\n");
+    #####:   43:		exit(7);
+        -:   44:	}
+    #####:   45:	else if (er_num == 9)
+        -:   46:	{
+    #####:   47:		fprintf (stderr, "Error in reallocation\n");
+    #####:   48:		exit (9);
+        -:   49:	}
+        -:   50:	
+    #####:   51:}
+        -:   52:
+       13:   53:void init_time (const char *format)  //showing current time with following format
+        -:   54:{
+       13:   55:    char *time_buf = (char*) malloc(70 * sizeof(char));
+        -:   56:	
+       13:   57:	const time_t t_start = time (NULL) ;
+       13:   58:	struct tm *tm = localtime (&t_start) ;
+        -:   59:	
+       13:   60:	if (strftime (time_buf, 70, format, tm) == 0) error(2);
+       13:   61:	printf ("%s\n", time_buf) ;
+        -:   62:
+       13:   63:    free(time_buf);
+       13:   64:}
+        -:   65:
+        -:   66:
+       18:   67:int main (int argc, char *argv [])
+        -:   68:{
+       18:   69:    if (argc == 1)	error (1);
+        -:   70:
+        -:   71:    int p[2];
+       17:   72:	char* format = NULL;
+       17:   73:    int interval = 10000 * 1000;
+       17:   74:    int limit = 0;
+       17:   75:    char returnCode = 0;
+       17:   76:    int option = 0;
+       17:   77:    char* output = (char*) calloc(20, sizeof(char));  //program output after all limits and intervals
+       17:   78:    int prevCode = 210121;  //to check if the program worked in previous time of launch after first launch 
+        -:   79:
+        -:   80:	//Checking and getting options ----------------------------------------------------
+       69:   81:    while ((option = getopt(argc, argv, "+t:i:l:c")) != -1)
+        -:   82:    {
+       38:   83:        switch (option) 
+        -:   84:        {
+        -:   85:            case 'c':
+        4:   86:                returnCode = 1;
+        4:   87:                break;
+        -:   88:            case 'i':
+       16:   89:                interval = atoi(optarg);
+       16:   90:                interval *= 1000;
+       16:   91:				if (interval <= 0) error (3);
+       14:   92:                break;
+        -:   93:            case 'l':
+       15:   94:                limit = atoi(optarg);
+       15:   95:				if (limit < 0) error (4);
+       14:   96:                break;
+        -:   97:            case 't':
+        3:   98:                format = optarg;
+        3:   99:                break;
+        -:  100:			default :
+    #####:  101:				error (1);
+        -:  102:        }
+        -:  103:    }
+        -:  104:	//------------------------------------------------------------------
+        -:  105:
+       14:  106:	if (optind >= argc) error (5); //if there is no program
+        -:  107:
+       13:  108:    if (limit == 0) limit=1;
+        -:  109:
+       88:  110:	while (limit) 
+        -:  111:    {
+       62:  112:        if (pipe(p) == -1) error(6);
+        -:  113:        
+       62:  114:        switch (fork())
+        -:  115:        {
+        -:  116:            case -1:
+    #####:  117:                error(7);
+    #####:  118:                break;
+        -:  119:            case 0:
+       62:  120:                close(p[0]);
+       62:  121:                dup2(p[1], 1);
+       62:  122:                close(p[1]);
+       62:  123:                execvp(argv [optind], argv + optind);//executing program
+       62:  124:                exit(8);
+        -:  125:                break;
+        -:  126:            default:
+       62:  127:                close(p[1]);
+       62:  128:                dup2(p[0], 0);
+       62:  129:                close(p[0]);                                                                                                                                                              
+        -:  130:			
+        -:  131:                char* courant;
+       62:  132:                courant = (char*) calloc(20, sizeof(char));  //our buffer output
+       62:  133:                double taille = 20;  //size of buffer 
+       62:  134:                size_t deja_lit = 0;  //size of already read characters
+       62:  135:                double avant = deja_lit;  //number of previously read characters
+        -:  136:    
+       62:  137:                deja_lit += read(0, courant + deja_lit, taille - deja_lit - 1);  //reading the given number of bites while saving it in buffer
+       62:  138:                if (deja_lit >= taille - 1) //if read bytes is more than size of buffer it will expand it
+        -:  139:                {
+       20:  140:                    taille*=2;
+       20:  141:                    courant = (char*) realloc (courant, taille);
+       20:  142:                    if (!courant) error(9);
+        -:  143:                }
+        -:  144:
+      363:  145:                while (avant != deja_lit)  //looping previous lines ↑↑↑
+        -:  146:                {
+      239:  147:                    avant = deja_lit;
+      239:  148:                    deja_lit += read(0, courant + deja_lit, taille - deja_lit - 1);
+      239:  149:                    if (deja_lit >= taille - 1) {
+      168:  150:                        taille*=2;
+      168:  151:                        courant = (char*) realloc (courant, taille);
+      168:  152:                        if (!courant) error(9);
+        -:  153:                    }
+        -:  154:                }
+        -:  155:
+       62:  156:			    if (memcmp(courant,output,taille))  //to compare if current buffer is similar to the output or not
+        -:  157:                {
+       44:  158:                    write(1, courant, deja_lit);  //in case of discrepancy with previous output puts current buf to input 
+       44:  159:                    output = courant;
+        -:  160:                }
+        -:  161:            
+        -:  162:            
+        -:  163:                int check;
+       62:  164:                wait(&check);
+        -:  165:
+       62:  166:                if (returnCode && (prevCode != WEXITSTATUS(check) || prevCode == 210121)) //check if it was launched previously and the previous code is not the current one
+        -:  167:                {
+       14:  168:                    prevCode = WEXITSTATUS(check);
+       14:  169:                    printf("exit %d\n", prevCode);
+       14:  170:                    fflush(0);  //to flush output buffer into output of the program
+        -:  171:                }
+        -:  172:
+       62:  173:                if (format != NULL) init_time(format);
+       62:  174:                usleep(interval);
+        -:  175:        }
+       62:  176:        limit--;
+        -:  177:    }
+        -:  178:    
+       13:  179:    return 0;
+        -:  180:}
+        -:  181:
+        -:  182:
