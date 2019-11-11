@@ -1,0 +1,692 @@
+Total entropy =  1.584962500721156
+Entropy for group of attribute petal width [0.6670730006443818, 1.31883378807372, 0.8267463724926178]
+Entropy for group of attribute petal length [1.0855093773010511, 1.5569685454909616, 1.0971245697587872]
+Entropy for group of attribute sepal width [0.0, 0.32744491915447627, 0.32744491915447627]
+Entropy for group of attribute sepal length [0.0, 0.4021791902022728, 0.4021791902022728]
+
+Attributes' names: ['petal width', 'petal length', 'sepal width', 'sepal length']
+Discriminative power of each attribute: [0.6474114469842497, 0.338428336537556, 1.3666658879515052, 1.3168430405863076]
+Attributes sorted by discriminitive power: ['sepal width', 'sepal length', 'petal width', 'petal length']
+Columns index sorted by discriminitive power: [2, 3, 0, 1]
+
+
+
+--------------------------------------------------------------------------------------------------------------------
+                                                  LEVEL: 1 
+
+                                           Sorted by sepal width
+                             1 group is UNIQUE all instaces are ['Iris-setosa']:
+
+                                          | 1.0 < sepal width < 1.9 |
+
+----------------------------------CHECKING FOR UNICITY IN THE UNCHECKED SETS----------------------------------------
+
+
+
+
+-------------------------------------------------------------------------------------------------------------------
+                                                  LEVEL: 1 
+
+                                           Sorted by sepal width
+                       2 group is NOT UNIQUE, instaces are ['Iris-versicolor' 'Iris-virginica']:
+
+                                          | 3.0 < sepal width < 4.9 |
+
+---------------------------------PROCEEDING TO NEXT LVL AND CHECKING FOR UNICITY-----------------------------------
+
+
+
+
+
+Total entropy =  0.32744491915447627
+Entropy for group of attribute petal width [0.24229218908241482, 0.4021791902022728]
+Entropy for group of attribute petal length [0.24229218908241482, 0.4021791902022728]
+Entropy for group of attribute sepal width [0.0, 0.5293608652873644]
+Entropy for group of attribute sepal length [0.0, 0.5293608652873644]
+
+Attributes' names: ['petal width', 'petal length', 'sepal width', 'sepal length']
+Discriminative power of each attribute: [0.005209229512132485, 0.005209229512132485, 0.06276448651079408, 0.06276448651079408]
+Attributes sorted by discriminitive power: ['sepal width', 'sepal length', 'petal width', 'petal length']
+Columns index sorted by discriminitive power: [2, 3, 0, 1]
+
+
+
+--------------------------------------------------------------------------------------------------------------------
+                                                  LEVEL: 2 
+
+                                           Sorted by sepal width
+                             1 group is UNIQUE all instaces are ['Iris-versicolor']:
+
+                                          | 3.0 < sepal width < 4.3 |
+
+----------------------------------CHECKING FOR UNICITY IN THE UNCHECKED SETS----------------------------------------
+
+
+
+
+-------------------------------------------------------------------------------------------------------------------
+                                                  LEVEL: 2 
+
+                                           Sorted by sepal width
+                       2 group is NOT UNIQUE, instaces are ['Iris-versicolor' 'Iris-virginica']:
+
+                                          | 4.4 < sepal width < 4.9 |
+
+---------------------------------PROCEEDING TO NEXT LVL AND CHECKING FOR UNICITY-----------------------------------
+
+
+
+
+
+Total entropy =  0.5293608652873644
+Entropy for group of attribute petal width [0.6500224216483541, 0.41381685030363374]
+Entropy for group of attribute petal length [0.6500224216483541, 0.41381685030363374]
+Entropy for group of attribute sepal width [0.41381685030363374, 0.6500224216483541]
+Entropy for group of attribute sepal length [0.0, 0.6500224216483541]
+
+Attributes' names: ['petal width', 'petal length', 'sepal width', 'sepal length']
+Discriminative power of each attribute: [0.01871801475041024, 0.01871801475041024, 0.01871801475041024, 0.21735010289615442]
+Attributes sorted by discriminitive power: ['sepal length', 'petal width', 'petal length', 'sepal width']
+Columns index sorted by discriminitive power: [3, 0, 1, 2]
+
+
+
+--------------------------------------------------------------------------------------------------------------------
+                                                  LEVEL: 3 
+
+                                           Sorted by sepal length
+                             1 group is UNIQUE all instaces are ['Iris-versicolor']:
+
+                                          | 1.2 < sepal length < 1.5 |
+
+----------------------------------CHECKING FOR UNICITY IN THE UNCHECKED SETS----------------------------------------
+
+
+
+
+-------------------------------------------------------------------------------------------------------------------
+                                                  LEVEL: 3 
+
+                                           Sorted by sepal length
+                       2 group is NOT UNIQUE, instaces are ['Iris-versicolor' 'Iris-virginica']:
+
+                                          | 1.5 < sepal length < 1.8 |
+
+---------------------------------PROCEEDING TO NEXT LVL AND CHECKING FOR UNICITY-----------------------------------
+
+
+
+
+
+Total entropy =  0.8112781244591328
+Entropy for group of attribute petal width [0.6500224216483541, 0.9182958340544896]
+Entropy for group of attribute petal length [0.9182958340544896, 0.6500224216483541]
+Entropy for group of attribute sepal width [0.0, 1.0]
+Entropy for group of attribute sepal length [0.0, 1.0]
+
+Attributes' names: ['petal width', 'petal length', 'sepal width', 'sepal length']
+Discriminative power of each attribute: [0.027118996607711, 0.027118996607711, 0.31127812445913283, 0.31127812445913283]
+Attributes sorted by discriminitive power: ['sepal width', 'sepal length', 'petal width', 'petal length']
+Columns index sorted by discriminitive power: [2, 3, 0, 1]
+
+
+
+--------------------------------------------------------------------------------------------------------------------
+                                                  LEVEL: 4 
+
+                                           Sorted by sepal width
+                             1 group is UNIQUE all instaces are ['Iris-versicolor']:
+
+                                          | 4.5 < sepal width < 4.5 |
+
+----------------------------------CHECKING FOR UNICITY IN THE UNCHECKED SETS----------------------------------------
+
+
+
+
+-------------------------------------------------------------------------------------------------------------------
+                                                  LEVEL: 4 
+
+                                           Sorted by sepal width
+                       2 group is NOT UNIQUE, instaces are ['Iris-versicolor' 'Iris-virginica']:
+
+                                          | 4.5 < sepal width < 4.9 |
+
+---------------------------------PROCEEDING TO NEXT LVL AND CHECKING FOR UNICITY-----------------------------------
+
+
+
+
+
+Total entropy =  1.0
+Entropy for group of attribute petal width [0.9182958340544896, 0.9182958340544896]
+Entropy for group of attribute petal length [0.9182958340544896, 0.9182958340544896]
+Entropy for group of attribute sepal width [0.9182958340544896, 0.9182958340544896]
+Entropy for group of attribute sepal length [0.9182958340544896, 0.9182958340544896]
+
+Attributes' names: ['petal width', 'petal length', 'sepal width', 'sepal length']
+Discriminative power of each attribute: [0.08170416594551044, 0.08170416594551044, 0.08170416594551044, 0.08170416594551044]
+Attributes sorted by discriminitive power: ['petal width', 'petal length', 'sepal width', 'sepal length']
+Columns index sorted by discriminitive power: [0, 1, 2, 3]
+
+
+
+-------------------------------------------------------------------------------------------------------------------
+                                                  LEVEL: 5 
+
+                                           Sorted by petal width
+                       1 group is NOT UNIQUE, instaces are ['Iris-versicolor' 'Iris-virginica']:
+
+                                          | 4.9 < petal width < 6.0 |
+
+---------------------------------PROCEEDING TO NEXT LVL AND CHECKING FOR UNICITY-----------------------------------
+
+
+
+
+
+Total entropy =  0.9182958340544896
+Entropy for group of attribute petal width [0.0, 0.0]
+Entropy for group of attribute petal length [0.0, 0.0]
+Entropy for group of attribute sepal width [0.0, 0.0]
+Entropy for group of attribute sepal length [0.0, 0.0]
+
+Attributes' names: ['petal width', 'petal length', 'sepal width', 'sepal length']
+Discriminative power of each attribute: [0.9182958340544896, 0.9182958340544896, 0.9182958340544896, 0.9182958340544896]
+Attributes sorted by discriminitive power: ['petal width', 'petal length', 'sepal width', 'sepal length']
+Columns index sorted by discriminitive power: [0, 1, 2, 3]
+
+
+
+-------------------------------------------------------------------------------------------------------------------
+                                                  LEVEL: 6 
+
+                                           Sorted by petal width
+                       1 group is NOT UNIQUE, instaces are ['Iris-versicolor' 'Iris-virginica']:
+
+                                          | 4.9 < petal width < 5.9 |
+
+---------------------------------PROCEEDING TO NEXT LVL AND CHECKING FOR UNICITY-----------------------------------
+
+
+
+
+
+Total entropy =  1.0
+Entropy for group of attribute petal width [0.0, 0.0]
+Entropy for group of attribute petal length [0.0, 0.0]
+Entropy for group of attribute sepal width [0.0, 0.0]
+Entropy for group of attribute sepal length [0.0, 0.0]
+
+Attributes' names: ['petal width', 'petal length', 'sepal width', 'sepal length']
+Discriminative power of each attribute: [1.0, 1.0, 1.0, 1.0]
+Attributes sorted by discriminitive power: ['petal width', 'petal length', 'sepal width', 'sepal length']
+Columns index sorted by discriminitive power: [0, 1, 2, 3]
+
+
+
+--------------------------------------------------------------------------------------------------------------------
+                                                  LEVEL: 7 
+
+                                           Sorted by petal width
+                             1 group is UNIQUE all instaces are ['Iris-virginica']:
+
+                                          | 4.9 < petal width < 4.9 |
+
+----------------------------------CHECKING FOR UNICITY IN THE UNCHECKED SETS----------------------------------------
+
+
+
+
+--------------------------------------------------------------------------------------------------------------------
+                                                  LEVEL: 7 
+
+                                           Sorted by petal width
+                             2 group is UNIQUE all instaces are ['Iris-versicolor']:
+
+                                          | 5.9 < petal width < 5.9 |
+
+----------------------------------CHECKING FOR UNICITY IN THE UNCHECKED SETS----------------------------------------
+
+
+
+
+--------------------------------------------------------------------------------------------------------------------
+                                                  LEVEL: 6 
+
+                                           Sorted by petal width
+                             2 group is UNIQUE all instaces are ['Iris-virginica']:
+
+                                          | 6.0 < petal width < 6.0 |
+
+----------------------------------CHECKING FOR UNICITY IN THE UNCHECKED SETS----------------------------------------
+
+
+
+
+-------------------------------------------------------------------------------------------------------------------
+                                                  LEVEL: 5 
+
+                                           Sorted by petal width
+                       2 group is NOT UNIQUE, instaces are ['Iris-versicolor' 'Iris-virginica']:
+
+                                          | 6.2 < petal width < 6.3 |
+
+---------------------------------PROCEEDING TO NEXT LVL AND CHECKING FOR UNICITY-----------------------------------
+
+
+
+
+
+Total entropy =  0.9182958340544896
+Entropy for group of attribute petal width [0.0, 0.0]
+Entropy for group of attribute petal length [0.0, 0.0]
+Entropy for group of attribute sepal width [0.0, 0.0]
+Entropy for group of attribute sepal length [0.0, 0.0]
+
+Attributes' names: ['petal width', 'petal length', 'sepal width', 'sepal length']
+Discriminative power of each attribute: [0.9182958340544896, 0.9182958340544896, 0.9182958340544896, 0.9182958340544896]
+Attributes sorted by discriminitive power: ['petal width', 'petal length', 'sepal width', 'sepal length']
+Columns index sorted by discriminitive power: [0, 1, 2, 3]
+
+
+
+-------------------------------------------------------------------------------------------------------------------
+                                                  LEVEL: 6 
+
+                                           Sorted by petal width
+                       1 group is NOT UNIQUE, instaces are ['Iris-versicolor' 'Iris-virginica']:
+
+                                          | 6.2 < petal width < 6.3 |
+
+---------------------------------PROCEEDING TO NEXT LVL AND CHECKING FOR UNICITY-----------------------------------
+
+
+
+
+
+Total entropy =  1.0
+Entropy for group of attribute petal width [0.0, 0.0]
+Entropy for group of attribute petal length [0.0, 0.0]
+Entropy for group of attribute sepal width [0.0, 0.0]
+Entropy for group of attribute sepal length [0.0, 0.0]
+
+Attributes' names: ['petal width', 'petal length', 'sepal width', 'sepal length']
+Discriminative power of each attribute: [1.0, 1.0, 1.0, 1.0]
+Attributes sorted by discriminitive power: ['petal width', 'petal length', 'sepal width', 'sepal length']
+Columns index sorted by discriminitive power: [0, 1, 2, 3]
+
+
+
+--------------------------------------------------------------------------------------------------------------------
+                                                  LEVEL: 7 
+
+                                           Sorted by petal width
+                             1 group is UNIQUE all instaces are ['Iris-virginica']:
+
+                                          | 6.2 < petal width < 6.2 |
+
+----------------------------------CHECKING FOR UNICITY IN THE UNCHECKED SETS----------------------------------------
+
+
+
+
+--------------------------------------------------------------------------------------------------------------------
+                                                  LEVEL: 7 
+
+                                           Sorted by petal width
+                             2 group is UNIQUE all instaces are ['Iris-versicolor']:
+
+                                          | 6.3 < petal width < 6.3 |
+
+----------------------------------CHECKING FOR UNICITY IN THE UNCHECKED SETS----------------------------------------
+
+
+
+
+--------------------------------------------------------------------------------------------------------------------
+                                                  LEVEL: 6 
+
+                                           Sorted by petal width
+                             2 group is UNIQUE all instaces are ['Iris-versicolor']:
+
+                                          | 6.3 < petal width < 6.3 |
+
+----------------------------------CHECKING FOR UNICITY IN THE UNCHECKED SETS----------------------------------------
+
+
+
+
+-------------------------------------------------------------------------------------------------------------------
+                                                  LEVEL: 1 
+
+                                           Sorted by sepal width
+                       3 group is NOT UNIQUE, instaces are ['Iris-versicolor' 'Iris-virginica']:
+
+                                          | 4.9 < sepal width < 6.9 |
+
+---------------------------------PROCEEDING TO NEXT LVL AND CHECKING FOR UNICITY-----------------------------------
+
+
+
+
+
+Total entropy =  0.32744491915447627
+Entropy for group of attribute petal width [0.24229218908241482, 0.4021791902022728]
+Entropy for group of attribute petal length [0.24229218908241482, 0.4021791902022728]
+Entropy for group of attribute sepal width [0.5293608652873644, 0.0]
+Entropy for group of attribute sepal length [0.5293608652873644, 0.0]
+
+Attributes' names: ['petal width', 'petal length', 'sepal width', 'sepal length']
+Discriminative power of each attribute: [0.005209229512132485, 0.005209229512132485, 0.06276448651079408, 0.06276448651079408]
+Attributes sorted by discriminitive power: ['sepal width', 'sepal length', 'petal width', 'petal length']
+Columns index sorted by discriminitive power: [2, 3, 0, 1]
+
+
+
+-------------------------------------------------------------------------------------------------------------------
+                                                  LEVEL: 2 
+
+                                           Sorted by sepal width
+                       1 group is NOT UNIQUE, instaces are ['Iris-versicolor' 'Iris-virginica']:
+
+                                          | 4.9 < sepal width < 5.5 |
+
+---------------------------------PROCEEDING TO NEXT LVL AND CHECKING FOR UNICITY-----------------------------------
+
+
+
+
+
+Total entropy =  0.5293608652873644
+Entropy for group of attribute petal width [0.41381685030363374, 0.41381685030363374]
+Entropy for group of attribute petal length [0.6500224216483541, 0.41381685030363374]
+Entropy for group of attribute sepal width [0.6500224216483541, 0.41381685030363374]
+Entropy for group of attribute sepal length [0.8112781244591328, 0.0]
+
+Attributes' names: ['petal width', 'petal length', 'sepal width', 'sepal length']
+Discriminative power of each attribute: [0.132096688995876, 0.01871801475041024, 0.01871801475041024, 0.13994736554698062]
+Attributes sorted by discriminitive power: ['sepal length', 'petal width', 'petal length', 'sepal width']
+Columns index sorted by discriminitive power: [3, 0, 1, 2]
+
+
+
+-------------------------------------------------------------------------------------------------------------------
+                                                  LEVEL: 3 
+
+                                           Sorted by sepal length
+                       1 group is NOT UNIQUE, instaces are ['Iris-versicolor' 'Iris-virginica']:
+
+                                          | 1.5 < sepal length < 1.9 |
+
+---------------------------------PROCEEDING TO NEXT LVL AND CHECKING FOR UNICITY-----------------------------------
+
+
+
+
+
+Total entropy =  0.7793498372920852
+Entropy for group of attribute petal width [0.6500224216483541, 0.6500224216483541]
+Entropy for group of attribute petal length [0.6500224216483541, 0.9182958340544896]
+Entropy for group of attribute sepal width [0.9182958340544896, 0.6500224216483541]
+Entropy for group of attribute sepal length [1.0, 0.0]
+
+Attributes' names: ['petal width', 'petal length', 'sepal width', 'sepal length']
+Discriminative power of each attribute: [0.17932914038591208, 0.05551064235231118, 0.05551064235231118, 0.3178113757536236]
+Attributes sorted by discriminitive power: ['sepal length', 'petal width', 'petal length', 'sepal width']
+Columns index sorted by discriminitive power: [3, 0, 1, 2]
+
+
+
+-------------------------------------------------------------------------------------------------------------------
+                                                  LEVEL: 4 
+
+                                           Sorted by sepal length
+                       1 group is NOT UNIQUE, instaces are ['Iris-versicolor' 'Iris-virginica']:
+
+                                          | 1.5 < sepal length < 1.8 |
+
+---------------------------------PROCEEDING TO NEXT LVL AND CHECKING FOR UNICITY-----------------------------------
+
+
+
+
+
+Total entropy =  0.9852281360342515
+Entropy for group of attribute petal width [0.9182958340544896, 0.9182958340544896]
+Entropy for group of attribute petal length [0.9182958340544896, 0.9182958340544896]
+Entropy for group of attribute sepal width [0.9182958340544896, 0.9182958340544896]
+Entropy for group of attribute sepal length [0.9182958340544896, 0.9182958340544896]
+
+Attributes' names: ['petal width', 'petal length', 'sepal width', 'sepal length']
+Discriminative power of each attribute: [0.19811742113040343, 0.19811742113040343, 0.19811742113040343, 0.19811742113040343]
+Attributes sorted by discriminitive power: ['petal width', 'petal length', 'sepal width', 'sepal length']
+Columns index sorted by discriminitive power: [0, 1, 2, 3]
+
+
+
+-------------------------------------------------------------------------------------------------------------------
+                                                  LEVEL: 5 
+
+                                           Sorted by petal width
+                       1 group is NOT UNIQUE, instaces are ['Iris-versicolor' 'Iris-virginica']:
+
+                                          | 5.9 < petal width < 6.3 |
+
+---------------------------------PROCEEDING TO NEXT LVL AND CHECKING FOR UNICITY-----------------------------------
+
+
+
+
+
+Total entropy =  0.8112781244591328
+Entropy for group of attribute petal width [0.0, 1.0]
+Entropy for group of attribute petal length [1.0, 0.0]
+Entropy for group of attribute sepal width [0.0, 1.0]
+Entropy for group of attribute sepal length [0.0, 1.0]
+
+Attributes' names: ['petal width', 'petal length', 'sepal width', 'sepal length']
+Discriminative power of each attribute: [0.31127812445913283, 0.31127812445913283, 0.31127812445913283, 0.31127812445913283]
+Attributes sorted by discriminitive power: ['petal width', 'petal length', 'sepal width', 'sepal length']
+Columns index sorted by discriminitive power: [0, 1, 2, 3]
+
+
+
+--------------------------------------------------------------------------------------------------------------------
+                                                  LEVEL: 6 
+
+                                           Sorted by petal width
+                             1 group is UNIQUE all instaces are ['Iris-virginica']:
+
+                                          | 5.9 < petal width < 6.0 |
+
+----------------------------------CHECKING FOR UNICITY IN THE UNCHECKED SETS----------------------------------------
+
+
+
+
+-------------------------------------------------------------------------------------------------------------------
+                                                  LEVEL: 6 
+
+                                           Sorted by petal width
+                       2 group is NOT UNIQUE, instaces are ['Iris-versicolor' 'Iris-virginica']:
+
+                                          | 6.0 < petal width < 6.3 |
+
+---------------------------------PROCEEDING TO NEXT LVL AND CHECKING FOR UNICITY-----------------------------------
+
+
+
+
+
+Total entropy =  1.0
+Entropy for group of attribute petal width [0.0, 0.0]
+Entropy for group of attribute petal length [0.0, 0.0]
+Entropy for group of attribute sepal width [0.0, 0.0]
+Entropy for group of attribute sepal length [0.0, 0.0]
+
+Attributes' names: ['petal width', 'petal length', 'sepal width', 'sepal length']
+Discriminative power of each attribute: [1.0, 1.0, 1.0, 1.0]
+Attributes sorted by discriminitive power: ['petal width', 'petal length', 'sepal width', 'sepal length']
+Columns index sorted by discriminitive power: [0, 1, 2, 3]
+
+
+
+--------------------------------------------------------------------------------------------------------------------
+                                                  LEVEL: 7 
+
+                                           Sorted by petal width
+                             1 group is UNIQUE all instaces are ['Iris-versicolor']:
+
+                                          | 6.0 < petal width < 6.0 |
+
+----------------------------------CHECKING FOR UNICITY IN THE UNCHECKED SETS----------------------------------------
+
+
+
+
+--------------------------------------------------------------------------------------------------------------------
+                                                  LEVEL: 7 
+
+                                           Sorted by petal width
+                             2 group is UNIQUE all instaces are ['Iris-virginica']:
+
+                                          | 6.3 < petal width < 6.3 |
+
+----------------------------------CHECKING FOR UNICITY IN THE UNCHECKED SETS----------------------------------------
+
+
+
+
+-------------------------------------------------------------------------------------------------------------------
+                                                  LEVEL: 5 
+
+                                           Sorted by petal width
+                       2 group is NOT UNIQUE, instaces are ['Iris-versicolor' 'Iris-virginica']:
+
+                                          | 6.5 < petal width < 6.9 |
+
+---------------------------------PROCEEDING TO NEXT LVL AND CHECKING FOR UNICITY-----------------------------------
+
+
+
+
+
+Total entropy =  0.9182958340544896
+Entropy for group of attribute petal width [0.0, 0.0]
+Entropy for group of attribute petal length [0.0, 0.0]
+Entropy for group of attribute sepal width [0.0, 0.0]
+Entropy for group of attribute sepal length [0.0, 0.0]
+
+Attributes' names: ['petal width', 'petal length', 'sepal width', 'sepal length']
+Discriminative power of each attribute: [0.9182958340544896, 0.9182958340544896, 0.9182958340544896, 0.9182958340544896]
+Attributes sorted by discriminitive power: ['petal width', 'petal length', 'sepal width', 'sepal length']
+Columns index sorted by discriminitive power: [0, 1, 2, 3]
+
+
+
+-------------------------------------------------------------------------------------------------------------------
+                                                  LEVEL: 6 
+
+                                           Sorted by petal width
+                       1 group is NOT UNIQUE, instaces are ['Iris-versicolor' 'Iris-virginica']:
+
+                                          | 6.5 < petal width < 6.7 |
+
+---------------------------------PROCEEDING TO NEXT LVL AND CHECKING FOR UNICITY-----------------------------------
+
+
+
+
+
+Total entropy =  1.0
+Entropy for group of attribute petal width [0.0, 0.0]
+Entropy for group of attribute petal length [0.0, 0.0]
+Entropy for group of attribute sepal width [0.0, 0.0]
+Entropy for group of attribute sepal length [0.0, 0.0]
+
+Attributes' names: ['petal width', 'petal length', 'sepal width', 'sepal length']
+Discriminative power of each attribute: [1.0, 1.0, 1.0, 1.0]
+Attributes sorted by discriminitive power: ['petal width', 'petal length', 'sepal width', 'sepal length']
+Columns index sorted by discriminitive power: [0, 1, 2, 3]
+
+
+
+--------------------------------------------------------------------------------------------------------------------
+                                                  LEVEL: 7 
+
+                                           Sorted by petal width
+                             1 group is UNIQUE all instaces are ['Iris-virginica']:
+
+                                          | 6.5 < petal width < 6.5 |
+
+----------------------------------CHECKING FOR UNICITY IN THE UNCHECKED SETS----------------------------------------
+
+
+
+
+--------------------------------------------------------------------------------------------------------------------
+                                                  LEVEL: 7 
+
+                                           Sorted by petal width
+                             2 group is UNIQUE all instaces are ['Iris-versicolor']:
+
+                                          | 6.7 < petal width < 6.7 |
+
+----------------------------------CHECKING FOR UNICITY IN THE UNCHECKED SETS----------------------------------------
+
+
+
+
+--------------------------------------------------------------------------------------------------------------------
+                                                  LEVEL: 6 
+
+                                           Sorted by petal width
+                             2 group is UNIQUE all instaces are ['Iris-versicolor']:
+
+                                          | 6.9 < petal width < 6.9 |
+
+----------------------------------CHECKING FOR UNICITY IN THE UNCHECKED SETS----------------------------------------
+
+
+
+
+--------------------------------------------------------------------------------------------------------------------
+                                                  LEVEL: 4 
+
+                                           Sorted by sepal length
+                             2 group is UNIQUE all instaces are ['Iris-virginica']:
+
+                                          | 1.8 < sepal length < 1.9 |
+
+----------------------------------CHECKING FOR UNICITY IN THE UNCHECKED SETS----------------------------------------
+
+
+
+
+--------------------------------------------------------------------------------------------------------------------
+                                                  LEVEL: 3 
+
+                                           Sorted by sepal length
+                             2 group is UNIQUE all instaces are ['Iris-virginica']:
+
+                                          | 1.9 < sepal length < 2.4 |
+
+----------------------------------CHECKING FOR UNICITY IN THE UNCHECKED SETS----------------------------------------
+
+
+
+
+--------------------------------------------------------------------------------------------------------------------
+                                                  LEVEL: 2 
+
+                                           Sorted by sepal width
+                             2 group is UNIQUE all instaces are ['Iris-virginica']:
+
+                                          | 5.6 < sepal width < 6.9 |
+
+----------------------------------CHECKING FOR UNICITY IN THE UNCHECKED SETS----------------------------------------
+
+
+
+                                            NO UNCHECKED SETS LEFT
