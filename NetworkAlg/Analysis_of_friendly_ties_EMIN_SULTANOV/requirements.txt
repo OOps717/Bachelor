@@ -1,0 +1,7 @@
+vk
+unicode
+yandex.translate
+pandas
+numpy
+matplotlib
+networkx

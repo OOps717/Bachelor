@@ -1,0 +1,42 @@
+Starting analysis of the graph and the data
+
+The most important user according to betweenness centrality is the user with id 43352
+
+The most important user according to closeness centrality is the user with id 43352
+
+The most important user according to degree centrality is the user with id 145943743
+
+The most important user according to eigenvector centrality is the user with id 43352
+
+Diameter of the graph:  5
+Centers of the graph:  ['53083705', 43352]
+
+Finding the shortest path between random point on the board and centrality nodes and plotting it...
+Finding the shortest path from 223564190  to 43352
+The shortest path is: [43352, 503552, 223564190]
+Finding the shortest path from 223564190  to 145943743
+The shortest path is: [145943743, 43352, 503552, 223564190]
+Starting analysis...
+Analysis of the user's sex
+Analysis of the user's full name
+Analysis of the user's birthday
+Analysis of the user's living country and city
+Analysis of the user's personal info and translating in english
+Analysis of the user's higher education
+
+Name with the highest usage : Alexander
+Surname with the highest usage : Ivanov
+Average sex : Male
+Average birthday : 1.4.1987
+Average country : Russia
+Average City : Moscow
+Languages : ['Русский', 'English', 'Deutsch', 'Español']
+Most common political views : Moderate
+Most common religion : Orthodoxy
+Most common inspiration : Music
+Main in people : Kindness and honesty
+Main in life : Family and children
+Average relation to smoking : Negative
+Average relation to alcohol : Negative
+Most common university name : МГК им. Чайковского
+Most common faculty name : Orchestra Faculty
